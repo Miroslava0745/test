@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body style="background: url(2.jpg);">	
+	<div class="box1">
+		<div style="display: flex;">
+		<h1 style="margin-left: auto; margin-right: auto;">Что изображено на картинке?</h1>
+		</div>
+		<div style="display: flex;">
+			<img src="1.png" style="margin-left: auto; margin-right: auto; height: 600px; width: 600px;">
+		</div>
+		<div style="width:500px; margin-right: auto; margin-left: auto; margin-top: 50px;">
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn1">Шляпа</button>
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn2">Мантия</button>
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn3">Палочка</button>
+		</div>
+	</div>
+	<div class="box2" style="display: none;">
+		<div style="display: flex;">
+		<h1 style="margin-left: auto; margin-right: auto;">Чья это волшебная палочка?</h1>
+		</div>
+		<div style="display: flex;">
+			<img src="3.webp" style="margin-left: auto; margin-right: auto; height: 600px; width: 600px;">
+		</div>
+		<div style="width:500px; margin-right: auto; margin-left: auto; margin-top: 50px;">
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn4">Рона</button>
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn5">Гарри</button>
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn6">Гермионы</button>
+		</div>
+	</div>
+	<div class="box3" style="display: none;">
+		<div style="display: flex;">
+		<h1 style="margin-left: auto; margin-right: auto;">какая у него фамилия?</h1>
+		</div>
+		<div style="display: flex;">
+			<img src="4.png" style="margin-left: auto; margin-right: auto; height: 600px; width: 600px;">
+		</div>
+		<div style="width:500px; margin-right: auto; margin-left: auto; margin-top: 50px;">
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn7">Долгопупс</button>
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn8">Малфой</button>
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn9">Уизли</button>
+		</div>
+	</div>
+	<div class="box4" style="display: none;">
+		<div style="display: flex;">
+		<h1 style="margin-left: auto; margin-right: auto;">Что это?</h1>
+		</div>
+		<div style="display: flex;">
+			<img src="5.jpg" style="margin-left: auto; margin-right: auto; height: 600px; width: 600px;">
+		</div>
+		<div style="width:500px; margin-right: auto; margin-left: auto; margin-top: 50px;">
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn10">герб когтервана</button>
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn11">бузинная палочка</button>
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn12">дары смерти</button>
+		</div>
+	</div>
+	<div class="box5" style="display: none;">
+		<div style="display: flex;">
+		<h1 style="margin-left: auto; margin-right: auto;">кто это?</h1>
+		</div>
+		<div style="display: flex;">
+			<img src="6.jfif" style="margin-left: auto; margin-right: auto; height: 600px; width: 600px;">
+		</div>
+		<div style="width:500px; margin-right: auto; margin-left: auto; margin-top: 50px;">
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn13">Дамблдор</button>
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn14">Макгоногл</button>
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px;" class="btn15">Северус</button>
+		</div>
+	</div>
+	<div class="box6" style="display: none;">
+		<div style="display: flex;">
+			<h1 style="margin-left: auto; margin-right: auto;">ТЕСТ ПРОЙДЕН!</h1>
+		</div>
+		<div style="display: flex;">
+			<h1 style="margin-left: auto; margin-right: auto;">Ты ответил правильно на все вопросы!</h1>
+		</div>
+		<div style="display: flex;">
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px; margin-right: auto; margin-left: auto;" class="btn16">Пройти тест ещё раз</button>
+		</div>
+		<div style="display:flex;">
+			<img src="7.jpg" style="margin-left: auto; margin-right: auto; margin-top: 50px">
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		
+		document.querySelector(".btn1").onclick = function(){
+			alert("правильно!")
+			document.querySelector(".box1").style.display = "none"
+			document.querySelector(".box2").style.display = "block"
+		}
+		document.querySelector(".btn2").onclick = function(){
+			alert("попробуй ещё раз")
+		}
+		document.querySelector(".btn3").onclick = function(){
+			alert("попробуй ещё раз")
+		}
+		document.querySelector(".btn4").onclick = function(){
+			alert("попробуй ещё раз")
+		}
+		document.querySelector(".btn5").onclick = function(){
+			alert("попробуй ещё раз")
+		}
+		document.querySelector(".btn6").onclick = function(){
+			alert("правильно!")
+			document.querySelector(".box2").style.display = "none"
+			document.querySelector(".box3").style.display = "block"
+		}
+		document.querySelector(".btn7").onclick = function(){
+			alert("попробуй ещё раз")
+		}
+		document.querySelector(".btn9").onclick = function(){
+			alert("попробуй ещё раз")
+		}
+		document.querySelector(".btn8").onclick = function(){
+			alert("правильно!")
+			document.querySelector(".box3").style.display = "none"
+			document.querySelector(".box4").style.display = "block"
+		}
+		document.querySelector(".btn16").onclick = function(){
+			document.querySelector(".box6").style.display = "none"
+			document.querySelector(".box1").style.display = "block"
+		}
+		document.querySelector(".btn10").onclick = function(){
+			alert("попробуй ещё раз")
+		}
+		document.querySelector(".btn11").onclick = function(){
+			alert("попробуй ещё раз")
+		}
+		document.querySelector(".btn12").onclick = function(){
+			alert("правильно!")
+			document.querySelector(".box4").style.display = "none"
+			document.querySelector(".box5").style.display = "block"
+		}
+		document.querySelector(".btn13").onclick = function(){
+			alert("правильно!")
+			document.querySelector(".box5").style.display = "none"
+			document.querySelector(".box6").style.display = "block"
+		}
+		document.querySelector(".btn14").onclick = function(){
+			alert("попробуй ещё раз")
+		}
+		document.querySelector(".btn15").onclick = function(){
+			alert("попробуй ещё раз")
+		}
+
+
+	</script>
+
+</body>
+</html>
